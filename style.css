@@ -1,16 +1,11 @@
 /* CSS to help  visualize my grid.*/
 
-.header-container {
-  background-color: rgb(135, 189, 151);
-  border: 2px solid black;
-}
-
 .main-container {
   background-color: rgb(135, 149, 189);
   border: 2px solid black;
 }
 
-/*Project CSS*/
+/*--------Project CSS---------*/
 * {
   margin: 0;
   padding: 0;
@@ -30,6 +25,8 @@ body {
   height: 100vh;
 }
 
+/*---------SIDEBAR----------*/
+
 .sidebar-container {
   display: grid;
   grid-template-columns: 1fr;
@@ -48,11 +45,50 @@ body {
   font-weight: bold;
 }
 
-aside ul li {
+.sidebar-container ul li {
   margin-bottom: 10px;
 }
 
-aside nav ul {
+.sidebar-container nav ul {
   display: grid;
   gap: 30px;
+}
+
+/*---------HEADER----------*/
+.header-container {
+  background-color: white;
+}
+
+.search-icon,
+.bell-ring-icon {
+  width: 20px;
+  height: 20px;
+}
+.header-top .account-icon {
+  width: 30px;
+  height: 30px;
+}
+
+.header-bottom .account-icon {
+  width: 50px;
+  height: 50px;
+}
+
+.header-bottom button {
+  display: inline-block;
+  padding: 5px 20px;
+  border: none;
+  color: white;
+  background-color: #2196f3;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+input[type="search"] {
+  width: 350px;
+  font-size: 18px;
+  border: none;
+  background-color: #61565633;
+  border-radius: 8px;
+  outline: none;
 }
