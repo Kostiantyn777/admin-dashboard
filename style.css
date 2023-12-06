@@ -1,0 +1,58 @@
+/* CSS to help  visualize my grid.*/
+
+.header-container {
+  background-color: rgb(135, 189, 151);
+  border: 2px solid black;
+}
+
+.main-container {
+  background-color: rgb(135, 149, 189);
+  border: 2px solid black;
+}
+
+/*Project CSS*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul {
+  list-style: none;
+}
+
+ul li a {
+  text-decoration: none;
+}
+
+body {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  height: 100vh;
+}
+
+.sidebar-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 9fr;
+  justify-items: center;
+  background-color: #2196f3;
+}
+
+.sidebar-container h3 {
+  margin-top: 10px;
+}
+
+.sidebar-container h3,
+.sidebar-container a {
+  color: white;
+  font-weight: bold;
+}
+
+aside ul li {
+  margin-bottom: 10px;
+}
+
+aside nav ul {
+  display: grid;
+  gap: 30px;
+}
