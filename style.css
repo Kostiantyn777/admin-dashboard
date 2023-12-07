@@ -35,8 +35,13 @@ body {
   background-color: #2196f3;
 }
 
-.sidebar-container h3 {
+.sidebar-container .icon-heading {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  gap: 4px;
   margin-top: 10px;
+  margin-bottom: 30px;
 }
 
 .sidebar-container h3,
@@ -46,14 +51,29 @@ body {
 }
 
 .sidebar-container ul li {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  gap: 8px;
   margin-bottom: 10px;
 }
 
-.sidebar-container nav ul {
+.icon-before {
   display: grid;
   gap: 30px;
 }
 
+.microsoft-icon {
+  width: 30px;
+  height: 30px;
+  fill: white;
+}
+
+.icon-before svg {
+  width: 16px;
+  height: 16px;
+  fill: white;
+}
 /*---------HEADER----------*/
 .header-container {
   background-color: white;
