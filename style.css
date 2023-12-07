@@ -1,11 +1,3 @@
-/* CSS to help  visualize my grid.*/
-
-.main-container {
-  background-color: rgb(135, 149, 189);
-  border: 2px solid black;
-}
-
-/*--------Project CSS---------*/
 * {
   margin: 0;
   padding: 0;
@@ -40,7 +32,7 @@ body {
   grid-template-columns: auto 1fr;
   align-items: center;
   gap: 4px;
-  margin-top: 10px;
+  margin-top: 15px;
   margin-bottom: 30px;
 }
 
@@ -104,7 +96,8 @@ body {
 }
 
 .search-icon,
-.bell-ring-icon {
+.bell-ring-icon,
+.card svg {
   width: 20px;
   height: 20px;
 }
@@ -129,10 +122,43 @@ body {
 }
 
 input[type="search"] {
-  width: 400px;
+  width: 500px;
   font-size: 18px;
   border: none;
   background-color: #61565633;
   border-radius: 8px;
   outline: none;
+}
+
+/*-----MAIN Content Container------*/
+.main-container {
+  background-color: #61565633;
+}
+.main-content-right-container {
+  padding: 16px;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+  padding-top: 8px;
+}
+.card {
+  background-color: #f4f4f4;
+  padding: 20px;
+  border-radius: 8px;
+  border-left: 8px solid #ffc107;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card p {
+  color: #615656e0;
+}
+
+.card .icons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  padding-top: 8px;
 }
