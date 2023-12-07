@@ -134,9 +134,6 @@ input[type="search"] {
 .main-container {
   background-color: #61565633;
 }
-.main-content-right-container {
-  padding: 16px;
-}
 
 .card-container {
   display: grid;
@@ -144,15 +141,20 @@ input[type="search"] {
   gap: 16px;
   padding-top: 8px;
 }
-.card {
+
+.card,
+.announcement-card {
   background-color: #f4f4f4;
   padding: 20px;
   border-radius: 8px;
-  border-left: 8px solid #ffc107;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+.card {
+  border-left: 8px solid #ffc107;
+}
 
-.card p {
+.card p,
+.announcement-card p {
   color: #615656e0;
 }
 
@@ -161,4 +163,24 @@ input[type="search"] {
   justify-content: flex-end;
   gap: 10px;
   padding-top: 8px;
+}
+
+.announcement-card {
+  display: grid;
+  gap: 12px;
+}
+
+.main-content-container {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 16px;
+  padding: 16px;
+}
+.main-content-left-container > h4 {
+  padding-bottom: 8px;
+}
+.announcement-1,
+.announcement-2 {
+  border-bottom: 1px solid #61565633;
+  padding-bottom: 12px;
 }
